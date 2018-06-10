@@ -4,8 +4,9 @@ def my_select(collection)
      newArray = []
      while i < collection.length
        returnValue = yield collection[i]
-       if returnValue == true
+       if returnValue == true do
          newArray.push(collection[i])
+       end
        i += 1
      end
      newArray
