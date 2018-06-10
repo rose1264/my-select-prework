@@ -3,7 +3,7 @@ def my_select(collection)
      i = 0
      newArray = []
      while i < collection.length
-       newArray.push(collection[i] if (yield collection[i] == true))
+       newArray.push(collection[i] if yield collection[i] == true)
        i += 1
      end
      newArray
